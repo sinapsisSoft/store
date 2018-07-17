@@ -16,8 +16,8 @@
         <td><%= product.price %></td>
         <td>
             <%= link_to "Mostrar" %>
-            <%= link_to "Editar" %>
-            <%= link_to "Eliminar" %>
+            <%= link_to "Editar", edit_product_path(product) %>
+            <%= link_to "Eliminar",product, method: :delete, data:{confirm:"Deseas eliminar este articulo"} %>
         </td>
     </tr>
     
